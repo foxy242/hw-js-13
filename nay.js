@@ -115,3 +115,33 @@
 // Створіть об’єкт "user", якbq буде мати властивості "name", "email", "password". Додайте метод "login",
 // який буде перевіряти правильність введеного email та password. 
 // Використайте інпути для запису значень властивостей в об’єкт
+
+// task 4
+
+const movie = {
+    title: "Годзилла против Конга",
+    director: "Адама Вингарда",
+    year: 2021,
+    rating: 6.17,
+  
+    // Метод для перевірки рейтингу фільму
+    checkRating: function() {
+      return this.rating > 8;
+    }
+  };
+  
+  // Виведення значень властивостей на сторінку
+  document.getElementById("titleDisplay").textContent = movie.title;
+  document.getElementById("directorDisplay").textContent = movie.director;
+  document.getElementById("yearDisplay").textContent = movie.year;
+  document.getElementById("ratingDisplay").textContent = movie.rating;
+  
+  // Перевірка рейтингу та зміна коліру тексту поля "title"
+  const titleDisplay = document.getElementById("titleDisplay");
+  if (movie.checkRating()) {
+    titleDisplay.style.color = "green";
+  }
+
+// Створіть об'єкт "movie" з властивостями "title", "director", "year", "rating".
+// Додайте до об'єкту метод, який повертає "true", якщо рейтинг фільму вище 8, та "false", якщо рейтинг фільму 8 або нижче.
+// Вивести значення властивостей на сторінку. Якщо метод повернув "true" то змінити колір тексту поля title на зелений.
