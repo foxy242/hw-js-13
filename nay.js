@@ -118,29 +118,29 @@
 
 // task 4
 
-const movie = {
-    title: "Годзилла против Конга",
-    director: "Адама Вингарда",
-    year: 2021,
-    rating: 6.17,
+// const movie = {
+//     title: "Годзилла против Конга",
+//     director: "Адама Вингарда",
+//     year: 2021,
+//     rating: 8.17,
   
-    // Метод для перевірки рейтингу фільму
-    checkRating: function() {
-      return this.rating > 8;
-    }
-  };
+//     // Метод для перевірки рейтингу фільму
+//     checkRating: function() {
+//       return this.rating > 8;
+//     }
+//   };
   
-  // Виведення значень властивостей на сторінку
-  document.getElementById("titleDisplay").textContent = movie.title;
-  document.getElementById("directorDisplay").textContent = movie.director;
-  document.getElementById("yearDisplay").textContent = movie.year;
-  document.getElementById("ratingDisplay").textContent = movie.rating;
+//   // Виведення значень властивостей на сторінку
+//   document.getElementById("titleDisplay").textContent = movie.title;
+//   document.getElementById("directorDisplay").textContent = movie.director;
+//   document.getElementById("yearDisplay").textContent = movie.year;
+//   document.getElementById("ratingDisplay").textContent = movie.rating;
   
-  // Перевірка рейтингу та зміна коліру тексту поля "title"
-  const titleDisplay = document.getElementById("titleDisplay");
-  if (movie.checkRating()) {
-    titleDisplay.style.color = "green";
-  }
+//   // Перевірка рейтингу та зміна коліру тексту поля "title"
+//   const titleDisplay = document.getElementById("titleDisplay");
+//   if (movie.checkRating()) {
+//     titleDisplay.style.color = "green";
+//   }
 
 // Створіть об'єкт "movie" з властивостями "title", "director", "year", "rating".
 // Додайте до об'єкту метод, який повертає "true", якщо рейтинг фільму вище 8, та "false", якщо рейтинг фільму 8 або нижче.
